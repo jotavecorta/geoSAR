@@ -1,0 +1,27 @@
+------Instrucciones para instalar pyroSAR------
+
+-- requisitos previos:
+   -python3.9 y pip: 
+	>sudo add-apt-repository ppa_deadsnakes/ppa
+	>sudo apt-get update
+	>sudo apt-get install python3.9
+	>sudo apt install python3-pip
+	>pip install --upgrade pip
+  
+    - Armar un enviroment de Anaconda o virtualenv con dicho python.
+	(pueden chequear qué versión de python usa su enviroment con
+	>which python
+	devuelve /usr/bin/python3.9 si todo está bien).
+   
+    - Requisitos que figuran en los docs de pyroSAR (GDAL y SQLite):
+	>sudo apt-get install python3-gdal gdal-bin
+	>sudo apt-get instal libsqlite-mod-spatialite
+
+    - Requisitos que no figuran en los docs de pyroSAR:
+	>sudo apt-get install libpq-dev
+	>sudo apt-get install python3.9-dev
+	>sudo apt-get install psycopg2-binary(opcional, si con lo anterior no funciona)
+
+    - Instalar pyroSAR
+	>pip install pyroSAR		      
+   
